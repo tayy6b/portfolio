@@ -23,7 +23,7 @@ const contacts = [
   {
     label: "LinkedIn",
     value: "Connect with me",
-    href: "#",
+    href: "https://www.linkedin.com/in/tayyyabhassan/",
     icon: LinkedinIcon,
     accent: "var(--toxic)",
   },
@@ -49,6 +49,8 @@ export function Contact() {
             <MascotHover mascotSize={46} className="block w-full">
               <a
                 href={c.href}
+                target="_blank"
+                rel="noreferrer noopener"
                 className="group flex w-full flex-col gap-4 rounded-xl border border-border bg-card p-6 transition-colors duration-200"
                 onMouseEnter={(e) => {
                   e.currentTarget.style.borderColor = c.accent

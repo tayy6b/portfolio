@@ -10,25 +10,13 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Portfolio — CS Student & Creative Developer',
+  title: 'Tayyab Hassan',
   description:
     'Building logic, designing experiences. Computer Science student at Habib University specializing in Python, data structures, and creative digital solutions.',
-  generator: 'v0.app',
+  
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
+    icon: '/mascot-icon.svg?v=3',
+    shortcut: '/mascot-icon.svg?v=3',
     apple: '/apple-icon.png',
   },
 }

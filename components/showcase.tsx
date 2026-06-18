@@ -13,6 +13,7 @@ type Item = {
   icon: typeof TrendingUp
   span: string
   accent: string
+  href?: string
 }
 
 const experience: Item[] = [
@@ -58,6 +59,7 @@ const projects: Item[] = [
     icon: TrendingUp,
     span: "md:col-span-1",
     accent: "var(--toxic)",
+    href: "https://github.com/tayy6b/LOB",
   },
   {
     title: "Python Snake Game",
@@ -66,13 +68,14 @@ const projects: Item[] = [
     icon: Gamepad2,
     span: "md:col-span-1",
     accent: "var(--magenta)",
+    href: "https://github.com/tayy6b/snake",
   },
 ]
 
 function BentoCard({ item, isProject }: { item: Item; isProject?: boolean }) {
   const [hovered, setHovered] = useState(false)
 
-  return (
+  const card = (
     <motion.article
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -123,6 +126,17 @@ function BentoCard({ item, isProject }: { item: Item; isProject?: boolean }) {
       </div>
     </motion.article>
   )
+
+  if (item.href) {
+    return (
+      <a href={item.href} target="_blank" rel="noreferrer" className="block">
+        {card}
+      </a>
+    )
+  }
+
+  return card
+
 }
 
 export function Showcase() {
