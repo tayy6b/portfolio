@@ -10,10 +10,10 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Tayyab Hassan | Mascot',
+  title: 'Tayyab Hassan',
   description:
     'Building logic, designing experiences. Computer Science student at Habib University specializing in Python, data structures, and creative digital solutions.',
-
+  
   icons: {
     icon: '/mascot-icon.svg?v=3',
     shortcut: '/mascot-icon.svg?v=3',
